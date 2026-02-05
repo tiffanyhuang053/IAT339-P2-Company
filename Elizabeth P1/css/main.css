@@ -1,0 +1,513 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F8F6;
+  font-family: "Noto Sans", sans-serif;
+  padding: 2rem;
+  color: #57564F;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  color: #C0C78C;
+}
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+.box {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+}
+
+.box-item-nav {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the in-line text */
+.text-link {
+  color: #F9F8F6;
+  background-color: #C9B59C;
+  text-decoration: none;
+}
+.text-link:hover, .text-link:focus {
+  background-color: #C0C78C;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.8rem;
+  color: #F9F8F6;
+  background-color: #C9B59C;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #B99470;
+}
+
+/* Styling for the submit/reset button */
+.button-submit, .button-reset {
+  display: inline-block;
+  padding: 1rem;
+  color: #F9F8F6;
+  background-color: #C0C78C;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border: none;
+  margin: 0;
+}
+
+.button-submit:hover, .button-submit:focus,
+.button-reset:hover, .button-reset:focus {
+  background-color: #C9B59C;
+}
+
+/* Styling for the text input*/
+/* Methods retreived from https://learn.shayhowe.com/html-css/building-forms/ */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+fieldset {
+  border: 2px solid;
+  border-color: #B99470;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+legend {
+  color: #57564F;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #B99470;
+}
+
+input {
+  margin: 10px;
+}
+.text-input input {
+  padding: 6px;
+  margin-top: 10px;
+  width: 80%;
+}
+
+
+/* Styling for the radio input*/
+.radio-input {
+  padding: 20px;
+}
+
+label:has(input[type="radio"]:checked) {
+  border: 2px solid;
+  border-color: #C9B59C;
+  accent-color: #B99470;
+}
+
+/* Styling for the image link*/
+.img-link img {
+  max-width: 400px;
+  transition: transform 0.3s ease;
+  display: block;
+  height: auto;
+}
+
+.img-link img:hover {
+  transform: scale(1.05);
+}
+/*https://www.w3schools.com/howto/howto_css_image_overlay_title.asp*/
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+/* Styling for the headers*/
+h1 {
+  font-family: "Zalando Sans Expanded";
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Zalando Sans Expanded";
+  font-weight: 500;
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+/* Styling for the paragraphs*/
+p {
+  max-width: 65rem;
+  font-weight: 300;
+  color: black;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+/* Styling for the numbered lists*/
+ol {
+  border-top: 6px solid;
+  border-bottom: 6px solid;;
+  border-color: #B99470;
+  padding: 20px;
+  max-width: 20rem;
+}
+
+ol li {
+  background: #F9F8F6;
+  color: black;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+/* Styling for the nav*/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  background-color: #C9B59C;
+}
+
+.nav-link a {
+  color: #e5e5e5;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.logo h1 {
+  color: #e5e5e5;
+  text-decoration: none;
+  margin: 0;
+}
+
+.menu-checkbox, 
+.hamburger {
+  display: none;
+}
+
+/* Styling for the product listing*/
+.product-list-card {
+  max-width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.product-list-card img {
+  width: auto;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-list-card h3 {
+  margin: 0;
+  max-width: 70%;
+}
+
+.product-list-card h4 {
+  color: #F9F8F6;
+  background-color: #B99470;
+  border-radius: 5px;
+  padding: 4px 12px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.product-list-card p {
+  margin: 0;
+  text-align: left;
+}
+
+/* Styling for Payment Form*/
+.delivery-form label {
+  display: flex;
+  align-items: center;
+  background-color: #F9F8F6;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.delivery-form h4 {
+  margin-top: 25px;
+  color: #57564F;
+  display: inline-block;
+}
+
+.delivery-form p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+form .button-submit {
+  width: 100%;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+/* Styling for checkout cart*/
+.checkout-page {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.checkout-main {
+  flex: 2;
+}
+
+.checkout-item {
+  display: flex;
+  padding: 24px;
+  border-top: 1px solid #57564F;
+  gap: 20px;
+}
+
+.checkout-item img {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.item-details h4 {
+  margin: 0;
+}
+
+.item-price {
+  margin: 0;
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.checkout-summary {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  min-width: 400px;
+}
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.summary-row p {
+  margin: 0;
+}
+
+.summary-row.total {
+  padding-top: 20px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.checkout-summary .button-submit {
+  width: 100%;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .checkout-page {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .checkout-main, 
+  .checkout-summary {
+    width: 80%;
+    flex: none;
+  }
+
+  .checkout-summary {
+    position: static;
+  }
+
+  /* Styling for Stacked Nav Bar*/
+  /* https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #F9F8F6;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+
+  .nav-link {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: #C9B59C; 
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-link a {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-checkbox:checked ~ .nav-link {
+    display: flex;
+  }
+  
+  .nav-bar {
+    position: relative;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkout-item {
+    gap: 15px;
+  }
+
+  .checkout-item img {
+    width: 100px;
+    height: 130px;
+  }
+
+  .item-details h4 {
+    font-size: 1rem;
+  }
+
+  .item-price {
+    font-size: 1rem;
+    min-width: auto;
+  }
+}
