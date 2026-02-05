@@ -1,0 +1,146 @@
+body {
+    background-color: #FFFFF9;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0.5rem 0;
+}
+
+/* NAV BAR */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: end;
+}
+
+/* FOOTER */
+footer {
+  color: #463F3A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 8rem;
+}
+
+.footer-top {
+  display: flex;
+  gap: 30rem;
+}
+
+.address, .hours {
+  max-width: 12rem;
+  text-align: center;
+}
+
+.hours p {
+  margin: 0;
+}
+
+/* CHECKOUT PAGE */
+.checkout-page {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  margin: 2rem 7rem;
+}
+
+.checkout-overview {
+    grid-column: 6/8;
+}
+
+.checkout-item, .checkout-final {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* make  2 rows for layout of information */
+    grid-template-rows: auto auto;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+ .checkout-item img, .checkout-item h5{
+    grid-column: 1;
+    align-self: start;
+ }
+
+ .checkout-item p {
+    grid-column: 2;
+    /* span from rows 1-2 */
+    grid-row: 1/2;
+    justify-self: end;
+    align-self: center;
+ }
+
+.checkout-final p {
+    justify-self: end;
+}
+
+.checkout-final a {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+}
+
+/* HOME PAGE */
+.centered-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 0 6rem 0;
+}
+
+.brand-logo h1 {
+  margin: 5rem 0 1rem 0;
+}
+
+.three-w {
+    grid-column: 2 / 5;
+    align-content: center;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.home-carousel {
+    grid-column: 5 / 9;
+    justify-self: center;
+    align-self: center;
+}
+
+/* MENU */
+.bev-headers {
+    /* make span form second to last column (headers container!!!) */
+    grid-column: 2 / 8;
+    display: grid;
+    /* split container to two (for hot and cold halves) */
+    grid-template-columns: 1fr 1fr;
+}
+
+.bev-headers h2 {
+    /* make span from first to last column */
+    grid-column: 1 / -1;
+}
+
+.hot-drinks {
+    grid-column: 2 / 4;
+}
+
+.cold-drinks {
+    /* make cold drink cards span from column 5 (mid) to last */
+    grid-column: 5 / 7;
+    /* make flex to have them sit next to each other */
+    display: flex;
+    gap: 4rem;
+}
+
+.dessert-header {
+    margin-top: 4rem;
+    grid-column: 2 / 7;
+}
+
+.desserts {
+    grid-column: 2 / 7;
+    display: flex;
+    gap: 4rem;
+}
+

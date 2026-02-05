@@ -1,0 +1,326 @@
+/* fonts */
+
+/* from: https://www.onlinewebfonts.com/download/01d273202731e44f0f1187f3afcaf156 */
+@import url(https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold);
+
+@font-face {
+  font-family: 'Sunday-Cinema';
+  src: url(../fonts/cinema\ sunday\ demo\ font.otf);
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+h1 {
+  font-family: Sunday-Cinema;
+  font-weight: 400;
+  /* 45px/16px=2.8125rem */
+  font-size: 4.0625rem;
+  color: #405C2A;
+}
+
+h2 {
+  font-family: "Mark Pro Bold";
+  /* 35px/16px=2.1875rem */
+  font-size: 2.1875rem;
+}
+
+h3 {
+  font-family: "Mark Pro Bold";
+  /* 27px/16px=1.6875rem */
+  font-size: 1.6875rem;
+}
+
+h4 {
+  font-family: "Mark Pro Bold";
+  /* 25px/16px=1.5625rem */
+  font-size: 1.5625rem;
+}
+
+h5 {
+  font-family: Poppins-SemiBold;
+  font-size: 1rem;
+}
+
+p, li, a, input, button, label {
+  font-family: Poppins-Light;
+}
+
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav a {
+  font-family: "Mark Pro Bold";
+  font-size: 1.6875rem;
+  color: #463F3A;
+  text-decoration: none;
+  position: relative;
+  margin: 0 1rem 0 0;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: #463F3A;
+  transition: width .5s;
+  border-radius: 1rem;
+}
+
+nav a:hover:after, nav a:focus:after {
+  width: 100%;
+}
+
+nav a:hover, nav a:focus {
+  color: #8A7968;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* Brand Elements Fonts Layout */
+.font-showcase h1, .font-showcase h2, .font-showcase h3, .font-showcase h4, .font-showcase h5, .font-showcase p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.font-showcase {
+  display: flex;
+  align-items: center;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button {
+  display: inline-block;
+  padding: 0.75rem 0.75rem;
+  color: white;
+  background-color: #57773E;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 0.75rem;
+  font-family: Poppins-SemiBold;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+}
+
+.button:hover, .button:focus {
+  background-color: #A0B682;
+  color: white;
+}
+
+a {
+  color: #405C2A;
+}
+
+a:hover, a:focus {
+  color: #A0B682;
+}
+
+img {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+figure {
+  margin: 0;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid;
+}
+
+/* PRODUCT CARD FOR MENU */
+.product-card {
+  margin: 0;
+}
+.product-card figure {
+  display: inline-block;
+  text-align: center;
+}
+
+.product-card h5, .delivery-info h3, .contact-info h3, .payment-info h3 {
+  margin: 0.5rem 0;
+  color: #405C2A;
+}
+
+.product-card p, .product-card h5 {
+  color: #403d40;
+}
+
+/* PAYMENT FORM FOR CHECKOUT */
+.user-inputs {
+    grid-column: 2/5;
+    display: grid;
+    gap: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.delivery-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#Address, #Card-Number, #NOC {
+  width: 29.4rem;
+}
+
+#Name, #Email, #Phone {
+  width: 16rem;
+}
+
+#City, #Province, #Postal-Code {
+  width: 8.9rem;
+}
+
+#First-Name, #Last-Name, #Exp, #CVV {
+  width: 14rem;
+}
+
+/* CHECKOUT CART FOR CART */
+.prod {
+    grid-column: 2/6;
+    margin-bottom: 2rem;
+}
+
+.qty {
+    grid-column: 6/7;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.tot {
+    grid-column: 7/8;
+    justify-self: end;
+    margin-bottom: 2rem;
+}
+
+.product {
+    /* put whole product section in column 2-8 of parent (main-container) */
+    grid-column: 2/8;
+    display: grid;
+    /* make new inner grid to layout the row of product information */
+    grid-template-columns: 4fr 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.cart-preview {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.product img {
+    width: 7rem;
+    height: auto;
+}
+
+.product .qty {
+    /* put in second column of the PRODUCT grid, not the main-container */
+    grid-column: 2;
+    align-self: center;
+}
+
+.product .tot {
+    /* put in third column of the PRODUCT grid, not the main-container */
+    grid-column: 3;
+    align-self: center;
+}
+
+.product-total {
+    /* span 6-7 of grid-container (main grid structure) */
+    grid-column: 6/8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.product-total h4 {
+    grid-column: 1;
+    justify-self: center;
+}
+
+.product-total p {
+    grid-column: 2;
+    justify-self: end;
+}
+
+.cont-checkout {
+  grid-column: 6/8;
+  justify-self: end;
+}
+
+/* MAIN GRID CONTAINER */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 0.25rem;
+}
+
+.grid-container h2, .grid-container h3, .grid-container h4 {
+  color: #405C2A;
+  margin: 0.5rem 0;
+}
+
+.grid-container p {
+  color: #403d40;
+  margin: 0.5rem 0;
+}
+
+.side-heading {
+   grid-column: 2/8;
+   margin-top: 7rem;
+}

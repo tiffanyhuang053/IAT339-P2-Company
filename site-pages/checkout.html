@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Matcha Lab Checkout Page</title>
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/branding-pages.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">SG</a>
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a>Contact</a>
+                <a href="cart.html"><img src="../img/cart.png"></a>
+            </nav>
+        </header>
+
+        <div class="grid-container">
+            <h1 class="side-heading">Checkout</h1>
+            <div class="user-inputs">
+                <section class="contact-info">
+                    <h3>Contact Information</h3>
+                    <input type="text" id="Name" placeholder="Name">
+                    <input type="email" id="Email" placeholder="Email">
+                    <input type="tel" id="Phone" placeholder="Phone">
+                </section>
+
+                <section class="delivery-info">
+                    <h3>Delivery</h3>
+                    <div class="radio-options">
+                        <input type="radio" id="Ship" name="option" value="Ship" checked>
+                        <label for="Ship">Ship</label>
+                        <input type="radio" id="Pickup" name="option" value="Pickup">
+                        <label for="Pickup">Pickup</label>
+                    </div>
+
+                    <div class="name-info">
+                        <input type="text" id="First-Name" placeholder="First Name">
+                        <input type="text" id="Last-Name" placeholder="Last Name">
+                    </div>
+
+                    <input type="text" id="Address" placeholder="Address">
+                    
+                    <div class="address-info">
+                        <input type="text" id="City" placeholder="City">
+                         <input type="text" id="Province" placeholder="Province">
+                         <input type="text" id="Postal-Code" placeholder="Postal Code">
+                    </div>
+                </section>
+
+                <section class="payment-info">
+                    <h3>Payment Information</h3>
+                    <input type="text" id="Card-Number" placeholder="Card Number">
+                    <div class="card-spec">
+                        <input type="text" id="Exp" placeholder="Expiration (MM/YY)">
+                         <input type="text" id="CVV" placeholder="CVV">
+                    </div>
+                    <input type="text" id="NOC" placeholder="Name on Card">
+                </section>
+            </div>
+
+            <div class="checkout-overview">
+                <div class="checkout-item">
+                    <img src="../img/iced-matcha-preview.png" alt="Iced matcha latte" width="112" height="120">
+                    <h5>Iced Matcha Latte</h5>
+                    <p>CAD $6.50</p>
+                </div>
+
+                <div class="checkout-item">
+                    <img src="../img/matcha-tiramisu-preview.png" alt="Box of matcha tiramisu" width="112" height="120">
+                    <h5>Matcha Tiramisu</h5>
+                    <p>CAD $16.00</p>
+                </div>
+
+                <div class="checkout-final">
+                    <h3>Subtotal</h3>
+                    <p>CAD $22.50</p>
+                    <a class="button">Pay Now</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-top">
+                <section class="address">
+                    <h2>Address</h2>
+                    <p>1234 W 52nd Avenue, Vancouver, BC V8X 15L</p>
+                </section>
+
+                <section class="hours">
+                    <h2>Hours</h2>
+                    <p>Weekdays: 10 AM - 6 PM</p>
+                    <p>Weekends: 10 AM - 8 PM</p>
+                </section>
+            </div>
+
+            <p>© The Matcha Lab</p>
+        </footer>
+    </body>
+</html>

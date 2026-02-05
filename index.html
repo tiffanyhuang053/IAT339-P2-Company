@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+
+      <h3>Please Read Me!</h3>
+      <p>This is the style guide for The Matcha Lab. Please press "Site Template" in the navigation below to be directed to The Matcha Lab's site. Click "SG" in the sites navigation bar to return back to the style guide. All navigations work in the site page except for the "Contact" button. To reach the checkout page, please click the Cart in the navigation bar and proceed with the purchase, by clicking the "Continue Checkout" button.</p>
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="site-pages/home.html">Site Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;p&gt;Learn more about matcha &lt;a href="https://en.wikipedia.org/wiki/Matcha"&gt;here!&lt;/a&gt;&lt;/p&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <p>Learn more about matcha <a href="https://en.wikipedia.org/wiki/Matcha">here!</a></p>
+
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;button type="submit"&gt;Submit&lt;/button&gt;&lt;button type="reset"&gt;Reset&lt;/button&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <button type="submit">
+          Submit
+        </button>
+        <button type="reset">
+          Reset
+        </button>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form method="post" action="#"&gt;
+          &lt;label for="if-label-example"&gt;Leave a comment!&lt;/label&gt;
+          &lt;input type="text" id="if-label-example" placeholder="This is the input field"&gt;
+          &lt;/form&gt;
+        </code>
+
+        <!-- learned from in class tutorial -->
+        <h4>Rendered element:</h4>
+        <form method="post" action="#">
+          <label for="if-label-example">Leave a comment!</label>
+          <input type="text" id="if-label-example" placeholder="This is the input field">
+        </form>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form method="post" action="#"&gt;
+          &lt;input type="radio" id="o1" name="option" value="Option 1" checked&gt;
+          &lt;label for="o1"&gt;Option 1&lt;/label&gt;
+          &lt;input type="radio" id="o2" name="option" value="Option 2"&gt;
+          &lt;label for="o2"&gt;Option 2&lt;/label&gt;
+          &lt;/form&gt;
+        </code>
+
+        <!-- learned from in class tutorial -->
+        <h4>Rendered element:</h4>
+        <p>Ice Level:</p></o>
+        <form method="post" action="#">
+          <input type="radio" id="100" name="option" value="100%" checked>
+          <label for="o1">100% Ice</label>
+
+          <input type="radio" id="75" name="option" value="75%">
+          <label for="o2">75% Ice</label>
+        </form>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>Sample Code:</h4>
+        <code>
+          &lt;a href="https://ca.pinterest.com/pin/15973773674708445/"&gt;&lt;img src="img/matcha-lattes.jpg" alt="Two matcha lattes on counter, left matcha being poured into cup" width="400" height="499"&gt;&lt;/a&gt;
+        </code>
+
+        <h4>Rendered Element:</h4>
+        <p>Example of an image as a link:</p>
+        <a href="https://ca.pinterest.com/pin/15973773674708445/"><img src="img/matcha-lattes.jpg" alt="Two matcha lattes on counter, left matcha being poured into cup" width="400" height="499"></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          &lt;h2&gt;Heading 2&lt;/h2&gt;
+          &lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h4&gt;Heading 4&lt;/h4&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>Sample code:</h4>
+        <code>
+           &lt;p&gt;The Matcha Lab is a specialty cafe with a wide range of handcrafted matcha products. From baked goods to drinks, the Matcha Lab prides itself in using ceremonial grade matcha from our very own matcha farm in Uji, Kyoto.&lt;/p&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <p>The Matcha Lab is a specialty cafe with a wide range of handcrafted matcha products. From baked goods to drinks, the Matcha Lab prides itself in using ceremonial grade matcha from our very own matcha farm in Uji, Kyoto.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol&gt;
+            &lt;li&gt;Ceremonial grade&lt;/li&gt;
+            &lt;li&gt;Grown in Uji, Kyoto&lt;/li&gt;
+            &lt;li&gt;Smooth, long-lasting flavour&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Ceremonial grade</li>
+          <li>Grown in Uji, Kyoto</li>
+          <li>Smooth, long-lasting flavour</li>
+        </ol>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav class="site-nav">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+          <a href=#cart><img src="img/cart.png"></a>
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <article class="product-card">
+          <figure>
+            <img src="img/matcha-latte.png" alt="Hot matcha latte with heart latte art" width="218" height="292">
+            <figcaption>
+              <h5>Matcha Latte</h5>
+              <p>CAD $6.00</p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <div class="user-inputs">
+          <section class="contact-info">
+              <h3>Contact Information</h3>
+              <input type="text" id="Name" placeholder="Name">
+              <input type="email" id="Email" placeholder="Email">
+              <input type="tel" id="Phone" placeholder="Phone">
+          </section>
+
+          <section class="delivery-info">
+              <h3>Delivery</h3>
+              <div class="radio-options">
+                  <input type="radio" id="Ship" name="option" value="Ship" checked>
+                  <label for="Ship">Ship</label>
+                  <input type="radio" id="Pickup" name="option" value="Pickup">
+                  <label for="Pickup">Pickup</label>
+              </div>
+
+              <div class="name-info">
+                  <input type="text" id="First-Name" placeholder="First Name">
+                  <input type="text" id="Last-Name" placeholder="Last Name">
+              </div>
+
+              <input type="text" id="Address" placeholder="Address">
+              
+              <div class="address-info">
+                  <input type="text" id="City" placeholder="City">
+                    <input type="text" id="Province" placeholder="Province">
+                    <input type="text" id="Postal-Code" placeholder="Postal Code">
+              </div>
+          </section>
+
+          <section class="payment-info">
+              <h3>Payment Information</h3>
+              <input type="text" id="Card-Number" placeholder="Card Number">
+              <div class="card-spec">
+                  <input type="text" id="Exp" placeholder="Expiration (MM/YY)">
+                    <input type="text" id="CVV" placeholder="CVV">
+              </div>
+              <input type="text" id="NOC" placeholder="Name on Card">
+          </section>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <div class="grid-container">
+          <h1 class="side-heading">Your Cart</h1>
+          <h3 class="prod">Product</h3>
+          <h3 class="qty">Quantity</h3>
+          <h3 class="tot">Total</h3>
+
+          <div class="product">
+              <div class="cart-preview">
+                  <img src="img/iced-matcha-latte.png" alt="Iced matcha latte">
+                  <div class="product-text">
+                      <h5>Iced Matcha Latte</h5>
+                      <p>CAD $6.50</p>
+                  </div>
+              </div>
+              <p class="qty">1</p>
+              <p class="tot">CAD $6.50</p>
+            </div>
+
+          <div class="product">
+              <div class="cart-preview">
+                  <img src="img/matcha-tiramisu.png" alt="Box of matcha tiramisu">
+                  <div class="product-text">
+                      <h5>Matcha Tiramisu</h5>
+                      <p>CAD $8.00</p>
+                  </div>
+              </div>
+              <p class="qty">2</p>
+              <p class="tot">CAD $16.00</p>
+          </div>
+
+          <div class="product-total">
+              <h4>Product Total</h4>
+              <p>CAD $22.50</p>
+          </div>
+
+          <a href=#checkout class="button cont-checkout">Continue Checkout</a>
+        </div>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!-- BRANDING SECTION -->
+     <section class="element">
+      <h2>Branding Ideas</h2>
+
+      <h3>What we do.</h3>
+      <p>The Matcha Lab is a specialty cafe with a wide range of handcrafted matcha products. From baked goods to drinks, the Matcha Lab prides itself in using ceremonial grade matcha from our very own matcha farm in Uji, Kyoto. We strive to create a calm, comforting environment for our customers.</p>
+
+      <h3>Who we are.</h3>
+      <p>As a person, the company is calm, easygoing, and approachable. It values taking things one step at a time, living in the moment, and bringing creativity into each and every product and experience it offers.</p>
+
+      <h3>Why you choose us.</h3>
+      <p>Our warm, calm space, mixed with thoughtfully crafted, high quality products, fosters a welcoming environment inviting customers to slow down and enjoy the moment.</p>
+     </section>
+
+     <section>
+      <h2>Brand Components</h2>
+
+      <section class="element">
+        <h3>Fonts</h3>
+        <div class="font-showcase">
+          <h1>Heading 1</h1>
+          <p> → Cinema Sunday - 65px</p>
+        </div>
+
+        <div class="font-showcase">
+          <h2>Heading 2</h2>
+          <p> → Mark Pro Bold - 35px</p>
+        </div>
+        
+        <div class="font-showcase">
+          <h3>Heading 3</h3>
+          <p> → Mark Pro Bold - 27px</p>
+        </div>
+
+        <div class="font-showcase">
+          <h4>Heading 4</h4>
+          <p> → Mark Pro Bold - 25px</p>
+        </div>
+
+        <div class="font-showcase">
+          <h5>Heading 5</h5>
+          <p> → Poppins SemiBold - 16px</p>
+        </div>
+
+        <div class="font-showcase">
+          <p>Paragraphs → Poppins Light - 16px</p>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Colour Palette</h3>
+        <img src="img/colour palette.png" alt="Image of colour palette" width="688" height="444">
+      </section>
+
+      <section class="element">
+        <h3>Art Direction</h3>
+        <img src="img/art-direction.png" alt="Collage of art direction" width="954" height="847">
+      </section>
+
+      <section class="element">
+        <h3>Branding Applied - Home</h3>
+        <img src="img/branding-applied-home.png" alt="Home page with branding applied and annotations">
+      </section>
+
+      <section class="element">
+        <h3>Branding Applied - Menu</h3>
+        <img src="img/branding-applied-menu.png" alt="Menu page with branding applied and annotations">
+      </section>
+
+     </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>Link to Figma file: <a href="https://www.figma.com/design/dgx1ioM2KAe3dDbDFYwGs2/IAT339-P1---Process?node-id=0-1&t=vUfdwvaZwjrwRuVd-1">https://www.figma.com/design/dgx1ioM2KAe3dDbDFYwGs2/IAT339-P1---Process?node-id=0-1&t=vUfdwvaZwjrwRuVd-1</a></li>
+        <li>Images & Coding Resouces: <a href="https://www.figma.com/design/dgx1ioM2KAe3dDbDFYwGs2/IAT339-P1---Process?node-id=173-12&t=AvyX7bAYp8zmkCbm-1">https://www.figma.com/design/dgx1ioM2KAe3dDbDFYwGs2/IAT339-P1---Process?node-id=173-12&t=AvyX7bAYp8zmkCbm-1</a></li>
+      </ul>
+    </section>
+
+  </body>
+</html>
