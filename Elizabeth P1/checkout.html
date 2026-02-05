@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P01 - Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/checkout_page.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--From Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>P01 - Checkout page</h1>
+
+      <nav class="nav box">        
+        <a href="index.html" class="box-item-nav">Style Guide</a>
+        <a href="product_listing.html" class="box-item-nav">Product Listing Template</a>
+        <a href="checkout.html" class="box-item-nav">Checkout Template</a>
+      </nav>
+
+      <!--Navigation Bar-->
+      <section class="element">
+        <div class="nav-bar">
+          <div class="logo">
+            <h1>mebo</h1>
+          </div>
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="nav-link">
+            <a class="button-nav" href="#">Home</a>
+            <a class="button-nav" href="#">Products</a>
+            <a class="button-nav" href="#">Contact</a>
+            <a class="button-nav" href="#">Our Story</a>
+            <a class="button-nav" href="#">Checkout</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="title">
+      <h2>My Cart</h2>
+    </div>
+
+    <section class="checkout">
+      <!--Checkout Page-->
+      <div class="checkout-page">
+        <!--Checkout Items-->
+        <div class="checkout-main">
+          <!--Item 1-->
+          <div class="checkout-item">
+            <img src="img/pink.png" alt="Pink Ceramic Memorial Box">
+            <div class="item-details">
+              <h4>Pink Ceramic Memorial Box</h4>
+              <div class="item-meta">
+                <p>Quantity: 1</p>
+              </div>
+            </div>
+            <h4 class="item-price">$129.00</h4>
+          </div>
+
+          <!--Item 2-->
+          <div class="checkout-item">
+            <img src="img/all.png" alt="Blue Ceramic Candle Plate">
+            <div class="item-details">
+              <h4>Blue Ceramic Candle Plate</h4>
+              <div class="item-meta">
+                <p>Quantity: 2</p>
+              </div>
+            </div>
+            <h4 class="item-price">$89.00</h4>
+          </div>
+        </div>
+        <!--Checkout Payment-->
+        <div class="checkout-summary">
+          <h3>Summary</h3>
+          <div class="summary-row">
+            <p>Subtotal</p>
+            <p>$218.00</p>
+          </div>
+          <div class="summary-row">
+            <p>Shipping</p>
+            <p>Calculated at Checkout</p>
+          </div>
+          <hr>
+          <div class="summary-row total">
+            <h3>Estimated Total</h3>
+            <h3>$228.00</h3>
+          </div>
+          <a class="button-submit" href="checkout_payment.html">CHECKOUT</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

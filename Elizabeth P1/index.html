@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P01 - Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--From Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>P01 - Style Guide</h1>
+      <p>A style guide for the pet memorial box company MEBO.</p>
+
+      <nav class="nav box">        
+        <a href="#interactive_elements" class="box-item-nav">Interactive Elements</a>
+        <a href="#text_elements" class="box-item-nav">Text Elements</a>
+        <a href="#combined_elements" class="box-item-nav">Combined Elements</a>
+        <a href="product_listing.html" class="box-item-nav">Product Listing Template</a>
+        <a href="checkout.html" class="box-item-nav">Checkout Template</a>
+        <a href="#citations" class="box-item-nav">Citations</a>
+      </nav>
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class="text-link" href="#"&gt;An in-text link&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>Aenean massa. Cum sociis natoque penatibus et 
+          magnis dis parturient montes, nascetur ridiculus mus.
+          <a class="text-link" href="#">An in-text link</a>
+          Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Nav Button</a>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-submit, .button-reset</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="reset" value="Reset" class="button-reset"&gt;</code>
+        <code>&lt;input type="submit" value="Submit" class="button-submit"&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <input type="reset" value="Reset" class="button-reset">
+        <input type="submit" value="Submit" class="button-submit">
+        <!-- https://www.w3schools.com/tags/att_input_type_reset.asp -->
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>fieldset, .text-input, .text-input input, .text-input label</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;fieldset class="text-input"&gt;</code>
+        <code>&lt;label&gt;Text Input:&lt;input type="text" placeholder="Enter here"/&gt;&lt;/label&gt;</code>
+        <code>&lt;/fieldset&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <fieldset class="text-input">
+          <label>
+            Text Input:
+            <input type="text" placeholder="Enter here">
+          </label>
+        </fieldset>
+        <!-- Sourced from https://learn.shayhowe.com/html-css/building-forms/ -->
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>fieldset, .radio-input</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;fieldset class="radio-input"&gt;</code>
+        <code>&lt;legend&gt;Select</code>
+        <code>&lt;input type="radio" id="radio-button" value="Yes"/&gt;&lt;label for="radio-button"&gt;Yes&lt;/label&gt;</code>
+        <code>&lt;/legend&gt;</code>
+        <code>&lt;/fieldset&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <fieldset class="radio-input">
+          <legend>
+            Select:
+            <label>
+              <input type="radio" name="delivery" value="Standard delivery"> Yes
+            </label>
+            <label>
+              <input type="radio" name="delivery" value="Express delivery"> No
+            </label>
+          </legend>
+        </fieldset>
+        <!-- Sourced from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio -->
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.img-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="somewhere.html"&gt;&lt;img src="img/dog.jpg" alt="Here is an image of a dog"&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="img-link" href="somewhere.html"><img src="img/dog.jpg" alt="Here is an image of a dog"/></a>
+        <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image -->
+      </section>
+    </section>
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>h1, h2, h3, h4</p>
+
+        <h4>Sample code:</h4>
+        <code> &lt;h1&gt;Header 1&lt;/h1&gt;</code>
+        <code> &lt;h2&gt;Header 2&lt;/h2&gt;</code>
+        <code> &lt;h3&gt;Header 3&lt;/h3&gt;</code>
+        <code> &lt;h4&gt;Header 4&lt;/h4&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;p&gt;Donec quam felis, ultricies nec, pellentesque eu,
+           pretium quis, sem. Nulla consequat massa quis enim.&lt;/p&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <p>This is a long section of text that is used for testing purposes only and does
+          not have any meaning that is suppose to matter. Lorem ipsum dolor sit amet, consectetuer 
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et 
+          magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem. Nulla consequat massa quis enim.
+        </p> <!-- Learnt from previous HTML courses -->
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code> 
+          &lt;ol&gt;<br>
+          &lt;li&gt;Item&lt;/li&gt;<br>
+          &lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Pink</li>
+          <li>White</li>
+          <li>Blue</li>
+        </ol>
+        <!-- https://www.w3schools.com/html/html_lists_ordered.asp -->
+      </section>
+    </section>
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav, .nav-link, .logo, .nav-bar, .hamburger</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="nav-bar"&gt;<br>
+          &lt;div class="logo"&gt;<br>
+          &lt;h1&gt;mebo&lt;/h1&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;input type="checkbox" id="menu-toggle" class="menu-checkbox"&gt;<br>
+          &lt;label for="menu-toggle" class="hamburger"&gt;<br>
+          &lt;span&gt;&lt;/span&gt;<br>
+          &lt;span&gt;&lt;/span&gt;<br>
+          &lt;span&gt;&lt;/span&gt;<br>
+          &lt;/label&gt;<br>
+          &lt;div class="nav-link"&gt;<br>
+          &lt;a href="#" class="button"&gt;Products&lt;/a&gt;<br>
+          &lt;a href="#" class="button"&gt;Contact&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="nav-bar">
+          <div class="logo">
+            <h1>mebo</h1>
+          </div>
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="nav-link">
+            <a class="button-nav" href="#">Home</a>
+            <a class="button-nav" href="#">Products</a>
+            <a class="button-nav" href="#">Contact</a>
+            <a class="button-nav" href="#">Our Story</a>
+            <a class="button-nav" href="#">Checkout</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.product-list-card, .card-content, .card-header</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="product-list-card"&gt;<br>
+          &lt;img src="img/dog.jpg" alt="Pink Ceramic Memorial Box"&gt;<br>
+          &lt;div class="card-content"&gt;<br>
+          &lt;div class="card-header"&gt;<br>
+          &lt;h3&gt;Pink Memorial Box&lt;/h3&gt;<br>
+          &lt;h4&gt;$129&lt;/h4&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;p&gt;This is a 
+            &lt;a class="text-link" href="mebo/pinkmemorialbox.html"&gt;pink pet memorial box&lt;/a&gt;
+            made from ceramics in a cloud shape.&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="product-list-card">
+          <img src="img/dog.jpg" alt="Pink Ceramic Memorial Box">
+          
+          <div class="card-content">
+            <div class="card-header">
+              <h3>Pink Memorial Box</h3>
+              <h4>$129</h4>
+            </div>
+
+            <p>
+              This is a <a class="text-link" href="mebo/pinkmemorialbox.html">pink pet memorial box</a>
+              made from ceramics in a cloud shape. Donec quam felis, ultricies nec, pellentesque eu,
+              pretium quis, sem.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>CSS selector:</h4>
+        <p>form, fieldset, .payment-form, .payment-form legend, .payment-form label, .payment-form input</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;<br>
+          &lt;fieldset class="delivery-form"&gt;<br>
+          &lt;legend&gt;Delivery&lt;/legend&gt;<br>
+          &lt;label&gt;<br>
+          &lt;input type="radio" name="delivery" value="Standard delivery"&gt; Standard delivery<br>
+          &lt;/label&gt;<br>
+          &lt;label&gt;<br>
+          &lt;input type="radio" name="delivery" value="Express delivery"&gt; Express delivery<br>
+          &lt;/label&gt;<br>
+          &lt;br&gt;<br>
+          &lt;label for="delivery-ad"&gt;Delivery Address:&lt;/label&gt;<br>
+          &lt;input id="delivery-ad" type="text" placeholder="Address"&gt;<br>
+          &lt;h4&gt;Shipping:&lt;/h4&gt;<br>
+          &lt;p&gt;$0&lt;/p&gt;<br>
+          &lt;/fieldset&gt;<br>
+          
+          &lt;fieldset class="payment-form"&gt;<br>
+          &lt;legend&gt;Payment Details&lt;/legend&gt;<br>
+          &lt;br&gt;<br>
+          &lt;label for="first-name"&gt;Name on card:&lt;/label&gt;<br>
+          &lt;input id="first-name" type="text" placeholder="Full name"&gt;<br>
+          &lt;br&gt;<br>
+          &lt;label for="ccard"&gt;Card number:&lt;/label&gt;<br>
+          &lt;input id="ccard" type="text" placeholder="123456789"&gt;<br>
+          &lt;br&gt;<br>
+          &lt;label for="email"&gt;Email&lt;/label&gt;<br>
+          &lt;input id="email" type="email" placeholder="12345678@email.com"&gt;<br>
+          &lt;/fieldset&gt;<br>
+          &lt;input type="submit" value="Submit" class="button-submit"&gt;<br>
+          &lt;/form&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <form>
+          <fieldset class="delivery-form">
+            <legend>Delivery</legend>
+            <label>
+              <input type="radio" name="delivery" value="Standard delivery"> Standard delivery (5 to 7 Days)
+            </label>
+            <label>
+              <input type="radio" name="delivery" value="Express delivery"> Express delivery (2 to 3 Days)
+            </label>
+            <label>
+              <input type="radio" name="delivery" value="Super delivery"> Super delivery (1 to 2 Days)
+            </label>
+            <br>
+            <label for="delivery-ad">Delivery Address:</label> 
+            <input id="delivery-ad" type="text" placeholder="Address">
+
+            <h4>Shipping:</h4>
+            <p>$0</p>
+          </fieldset>
+
+          <fieldset class="payment-form">
+            <legend>Payment Details</legend>
+
+            <label for="first-name">Name on card:</label> 
+            <input id="first-name" type="text" placeholder="Full name">
+            <br>
+            <label for="ccard">Card number:</label>
+            <input id="ccard" type="text" placeholder="123456789">
+            <br>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="12345678@email.com">
+          </fieldset>
+
+          <input type="submit" value="Submit" class="button-submit">
+        </form>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.checkout-item, .checkout-summary</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="checkout-item"&gt;<br>
+          &lt;img src="img/pink.png" alt="Pink Ceramic Memorial Box"&gt;<br>
+          &lt;div class="item-details"&gt;<br>
+          &lt;h4&gt;Pink Ceramic Memorial Box&lt;/h4&gt;<br>
+          &lt;div class="item-meta"&gt;<br>
+          &lt;p&gt;Quantity: 1&lt;/p&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;h4 class="item-price"&gt;$129.00&lt;/h4&gt;<br>
+          &lt;/div&gt;<br>
+          <br>
+          &lt;div class="checkout-summary"&gt;<br>
+          &lt;h3&gt;Summary&lt;/h3&gt;<br>
+          &lt;div class="summary-row"&gt;<br>
+          &lt;p&gt;Subtotal&lt;/p&gt;<br>
+          &lt;p&gt;$218.00&lt;/p&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;div class="summary-row"&gt;<br>
+          &lt;p&gt;Shipping&lt;/p&gt;<br>
+          &lt;p&gt;FREE&lt;/p&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;br&gt;<br>
+          &lt;div class="summary-row total"&gt;<br>
+          &lt;h3&gt;Total&lt;/h3&gt;<br>
+          &lt;h3&gt;$228.00&lt;/h3&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;a class="button-submit" href="#"&gt;CHECKOUT&lt;/a&gt;<br>
+          &lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="checkout-page">
+          <div class="checkout-main">
+            <div class="checkout-item">
+              <img src="img/pink.png" alt="Pink Ceramic Memorial Box">
+              <div class="item-details">
+                <h4>Pink Ceramic Memorial Box</h4>
+                <div class="item-meta">
+                  <p>Quantity: 1</p>
+                </div>
+              </div>
+              <h4 class="item-price">$129.00</h4>
+            </div>
+
+            <div class="checkout-item">
+              <img src="img/all.png" alt="Blue Ceramic Candle Plate">
+              <div class="item-details">
+                <h4>Blue Ceramic Candle Plate</h4>
+                <div class="item-meta">
+                  <p>Quantity: 2</p>
+                </div>
+              </div>
+              <h4 class="item-price">$89.00</h4>
+            </div>
+          </div>
+
+          <div class="checkout-summary">
+            <h3>Summary</h3>
+            <div class="summary-row">
+              <p>Subtotal</p>
+              <p>$218.00</p>
+            </div>
+            <div class="summary-row">
+              <p>Shipping</p>
+              <p>FREE</p>
+            </div>
+            <hr>
+            <div class="summary-row total">
+              <h3>Total</h3>
+              <h3>$228.00</h3>
+            </div>
+            <a class="button-submit" href="#">CHECKOUT</a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="company">
+      <h2>Branding</h2>
+      <section class="element">
+        <h3>The Company</h3>
+        <p style="font-style: italic;">What does the company do, or offer?</p>
+        <p>MEBO is a pet memorial company focusing on creating cloud-shaped ceramic urns and candle holders.
+          Pet owners can keep pet hair, whiskers, or ashes in the urn. The package also includes dried flowers symbolizing eternal love, 
+          a memorial card as a handmade memorial plaque for the pet, and a seed card to let the pet accompany their owner in another form.
+        </p>
+
+        <p style="font-style: italic;">Who is the company to potential customers? (as a person)</p>
+        <p>Targeted towards young pet owners, MEBO aims to act as a friend by the side of owners who have just lost their pet. 
+          Offering emotional support through honoring the memories owners have with their pet. Every time they see the memorial box, it provides 
+          a source of comfort knowing their pet is with them.
+        </p>
+
+        <p style="font-style: italic;">Why might this company entice someone to purchase a product or service?</p>
+        <p>
+          MEBO is special in providing a unique cloud-shaped design representing the softness and tranquility of clouds. 
+          As well as personalization to inscribe each pet's name on the urn. 
+          The small pet figure sitting on top of the urn reminds owners of the companionship they shared with their pet.
+        </p>
+        
+        <h3>Customer Persona</h3>
+        <p>Christy lives alone in a small apartment in the busy center of Toronto. Working remotely as a software engineer, she spends most of her time at home 
+          and rarely goes outdoors. For the past nine years, her Yorkshire Terrier, Coco, has been her closest companion. 
+          When Coco passed away due to old age, Christy was overwhelmed with grief. 
+          The once-familiar apartment felt unbearably quiet, intensifying her sense of loss. Wanting a meaningful way to honor Coco, 
+          Christy followed a close friend’s recommendation and discovered MEBO. Drawn to its gentle design and calming color, she chose a blue memorial urn. 
+          Now, as Christy works at her desk, the soft blue urn sits nearby. Each time she glances up from her screen, she is comforted by the feeling that Coco 
+          is still with her.
+        </p>
+      </section>
+      <section class="element">
+        <h3>Brand Components</h3>
+        <h4>Fonts</h4>
+        <h1>Header 1 text in <br>Zalando Sans Expanded,<br> weight 700, size 4rem. Super large text, used as the logo in the navigation bar. </h1>
+        <h2>Header 2 text in Zalando Sans Expanded, weight 500, size 3rem. Used as large titles such as page or section name.</h2>
+        <h3>Header 3 text in Noto Sans, weight 500, size 1.75rem. Used for medium titles like product names.</h3>
+        <h4>Header 4 text in Noto Sans, weight 400, size 1.25rem. Used on small titles such as price labels.</h4>
+        <p>Example paragraph text in Noto Sans, weight 300, size 1rem. Used for long texts, labels, forms, and navigation buttons.</p>
+        <h4>Combination</h4>
+        <h2 style="margin: 0; text-align: center;">Products</h2>
+        <h3 style="margin: 0;">Pink Box</h3>
+        <h4 style="margin: 0;">$218</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet suscipit lectus, quis lobortis nisi pretium vitae. Sed blandit viverra posuere. 
+          Vivamus eleifend nunc in volutpat pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula libero, convallis in facilisis sed, porttitor id turpis. 
+          Nunc a justo sit amet libero facilisis mattis nec et felis. Nullam nec magna quis dolor auctor finibus a ac dolor.</p>
+
+        <h4>Colour Palette</h4>
+        <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_names -->
+        <p style="background-color:#57564F;">Text Color #57564F For all text other than buttons.</p>
+        <p style="background-color:#F9F8F6;">Background/Primary color #F9F8F6</p>
+        <p style="background-color:#C9B59C;">Secondary color #C9B59C Large color areas such as navigation bar, buttons and highlighting in-text link.</p>
+        <p style="background-color:#B99470;">Secondary color #B99470 Frequent appearing small color areas such as price tags, borders, and navigation buttons.</p>
+        <p style="background-color:white;">Accent color white. Used as input area and payment summary background color.</p>
+        <p style="background-color:#C0C78C;">Accent color #C0C78C Used for important confirmation buttons such as submit.</p>
+        <p style="font-style: italic;">Colors change between secondary colors and accent color to indicate user interaction and state change.
+          <br>Inputs are highlighted by secondary colors.
+        </p>
+
+        <h3>Imagery</h3>
+        <h4>Hero Image - Covers page width at 600px height</h4>
+        <img src="img/all.png" alt="img" style="width: 100%; max-height: 600px; object-fit: cover;">
+        <h4>Product listing Image</h4>
+        <img src="img/white.png" alt="img" style="width: 500px; max-height: 20rem; object-fit: cover;"><br>
+        <h4>Checkout Image</h4>
+        <img src="img/yellow.png" alt="img" style="width: 140px; max-height: 180px; object-fit: cover;"><br>
+        <h4>Display Image</h4>
+        <img src="img/pink.png" alt="img">
+      </section>
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Google. (n.d.). <strong>Noto sans</strong>. Google Fonts. Retrieved from <a href="#">https://fonts.google.com/noto/specimen/Noto+Sans</a>.</li>
+        <li>Google. (n.d.). <strong>Zalando Sans Expanded</strong>. Google Fonts. Retrieved from <a href="#">https://fonts.google.com/specimen/Zalando+Sans+Expanded</a>.</li>
+        <li>@mebo_memorialbox. (n.d.). <strong>Mebo (@mebo_memorialbox)</strong>. Instagram. Retrieved from <a href="#">https://www.instagram.com/mebo_memorialbox/</a>.</li>        
+        <li>W3Schools Tryit Editor. (n.d.). <strong>HTML Color Names</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_names</a>.</li>                
+        <li>W3Schools Tryit Editor. (n.d.). <strong>HTML Ordered Lists</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/html/html_lists_ordered.asp</a>.</li>        
+        <li>W3Schools Tryit Editor. (n.d.). <strong>HTML Image Links</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image</a>.</li>
+        <li>MozDevNet. (n.d.). <strong>&lt;input type="radio"&gt;</strong>. MDN Blog RSS. Retrieved from <a href="#">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio</a>.</li>
+        <li>Building Forms - Learn to Code HTML & CSS. (n.d.). <strong>Building Forms</strong>. Learn to code HTML & CSS. Retrieved from <a href="#">https://learn.shayhowe.com/html-css/building-forms/</a>.</li>
+        <li>W3Schools Tryit Editor. (n.d.). <strong>HTML &lt;input type="reset"&gt;</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/tags/att_input_type_reset.asp</a>.</li>
+        <li>W3Schools Tryit Editor. (n.d.). <strong>How TO - Image Overlay Title</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/howto/howto_css_image_overlay_title.asp</a>.</li>
+        <li>W3Schools Tryit Editor. (n.d.). <strong>HTML Mobile Navbar</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/howto/howto_js_mobile_navbar.asp</a>.</li>
+        <li>W3Schools Tryit Editor. (n.d.). <strong>CSS Grid</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/css/css_grid.asp</a>.</li>
+
+        <li>MozDevNet. (n.d.). <strong>CSS grid layout</strong>. MDN Blog RSS. Retrieved from <a href="#">https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout</a>.</li>
+
+        <li>W3Schools Tryit Editor. (n.d.). <strong>HTML &lt;input type="submit"&gt;</strong>. W3Schools online HTML editor. Retrieved from <a href="#">https://www.w3schools.com/tags/att_input_type_submit.asp</a>.</li>
+      </ul>
+    </section>
+  </body>
+</html>

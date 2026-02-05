@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P01 - Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/checkout_payment.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--From Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>P01 - Checkout page</h1>
+
+      <nav class="nav box">        
+        <a href="index.html" class="box-item-nav">Style Guide</a>
+        <a href="product_listing.html" class="box-item-nav">Product Listing Template</a>
+        <a href="checkout.html" class="box-item-nav">Checkout Template</a>
+      </nav>
+
+      <!--Navigation Bar-->
+      <section class="element">
+        <div class="nav-bar">
+          <div class="logo">
+            <h1>mebo</h1>
+          </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+          <div class="nav-link">
+            <a class="button-nav" href="#">Home</a>
+            <a class="button-nav" href="#">Products</a>
+            <a class="button-nav" href="#">Contact</a>
+            <a class="button-nav" href="#">Our Story</a>
+            <a class="button-nav" href="#">Checkout</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="title">
+      <h2>Payment</h2>
+    </div>
+
+    <section class="checkout">
+      <!--Checkout Page-->
+      <div class="checkout-page">
+        <!--Checkout Items-->
+        <div class="checkout-main">
+          <!--Item 1-->
+          <div class="checkout-item">
+            <img src="img/pink.png" alt="Pink Ceramic Memorial Box">
+            <div class="item-details">
+              <h4>Pink Ceramic Memorial Box</h4>
+              <div class="item-meta">
+                <p>Quantity: 1</p>
+              </div>
+            </div>
+            <h4 class="item-price">$129.00</h4>
+          </div>
+        </div>
+        <!--Checkout Payment-->
+        <div class="checkout-summary">
+          <h3>Summary</h3>
+          <div class="summary-row">
+            <p>Subtotal</p>
+            <p>$218.00</p>
+          </div>
+          <div class="summary-row">
+            <p>Shipping</p>
+            <p>$8.00</p>
+          </div>
+          <hr>
+          <div class="summary-row total">
+            <h3>Total</h3>
+            <h3>$226.00</h3>
+          </div>
+        </div>
+      </div>
+
+      <!--Payment Section-->
+      <form>
+        <!--Delivery-->
+        <fieldset class="delivery-form">
+          <legend>Delivery</legend>
+          <label>
+            <input type="radio" name="delivery" value="Standard delivery"> Standard delivery (5 to 7 Days)
+          </label>
+          <label>
+            <input type="radio" name="delivery" value="Express delivery"> Express delivery (2 to 3 Days)
+          </label>
+          <label>
+            <input type="radio" name="delivery" value="Super delivery"> Super delivery (1 to 2 Days)
+          </label>
+          <br>
+          <label for="delivery-ad">Delivery Address:</label> 
+          <input id="delivery-ad" type="text" placeholder="Address">
+
+          <h4>Shipping:</h4>
+          <p>$0</p>
+        </fieldset>
+
+        <!--Payment-->
+        <fieldset class="payment-form">
+          <legend>Payment Details</legend>
+
+          <label for="first-name">Name on card:</label> 
+          <input id="first-name" type="text" placeholder="Full name">
+          <br>
+          <label for="ccard">Card number:</label>
+          <input id="ccard" type="text" placeholder="123456789">
+          <br>
+          <label for="email">Email:</label>
+          <input id="email" type="email" placeholder="12345678@email.com">
+        </fieldset>
+
+        <input type="submit" value="Submit" class="button-submit">
+      </form>
+
+    </section>
+
+  </body>
+</html>
