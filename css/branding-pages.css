@@ -150,3 +150,77 @@ footer {
 .product-page-info h4 {
     color: #403d40;
 }
+
+/* CONTACT PAGE */
+.contact-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-card {
+    grid-column: 4 / 10; /* Centers the card */
+    background-color: #FFFFFF;
+    padding: 3.5rem 4rem;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-methods {
+    grid-column: 4 / 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-methods p {
+    margin-top: 0;
+}
+
+/* Form */
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-family: 'Poppins-Light', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%24%2024%22%3E%3Cpath%20fill%3D%22%23463F3A%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem top 50%;
+    background-size: 1.5rem auto;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+.contact-form .button {
+    border: none;
+}
+.product-page-info h4 {
+    color: #403d40;
+}
