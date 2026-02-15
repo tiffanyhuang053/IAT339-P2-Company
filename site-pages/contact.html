@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Matcha Lab Contact Page</title>
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/branding-pages.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">SG</a>
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="#">Contact</a>
+                <a href="cart.html"><img src="../img/cart.png"></a>
+            </nav>
+        </header>
+
+        <div class="grid-container contact-page-layout">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Reach out with your questions!</p>
+            </div>
+
+            <div class="contact-methods">
+                <div class="specific-contact-method">
+                    <h4>Email</h4>
+                    <p>matchalabyvr@gmail.com</p>
+                </div>
+                <div class="specific-contact-method">
+                    <h4>Instagram</h4>
+                    <p>@matcha.lab</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="name-info">
+                        <input type="text" id="First-Name" placeholder="First Name">
+                        <input type="text" id="Last-Name" placeholder="Last Name">
+                    </div>
+                    
+                    <input type="email" id="Email" placeholder="Email Address" class="full-width">
+                    
+                    <div class="custom-select">
+                        <select id="Question-Type" class="full-width">
+                            <option value="" disabled selected hidden>Type of Question</option>
+                            <option value="menu">Menu Inquiry</option>
+                            <option value="order">Order Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <textarea id="Message" placeholder="Message" class="full-width" rows="6"></textarea>
+                    
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-top">
+                <section class="address">
+                    <h2>Address</h2>
+                    <p>1234 W 52nd Avenue, Vancouver, BC V8X 15L</p>
+                </section>
+
+                <section class="hours">
+                    <h2>Hours</h2>
+                    <p>Weekdays: 10 AM - 6 PM</p>
+                    <p>Weekends: 10 AM - 8 PM</p>
+                </section>
+            </div>
+
+            <p>© The Matcha Lab</p>
+        </footer>
+    </body>
+</html>
