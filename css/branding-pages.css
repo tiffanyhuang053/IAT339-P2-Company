@@ -96,6 +96,40 @@ footer {
     align-self: center;
 }
 
+/* HOME PAGE - COMPANY NEWS*/
+.news-updates {
+    margin-top: 8rem;
+}
+
+.news-title {
+    grid-column: 2 / 12;
+    margin-bottom: 2rem;
+}
+
+.news-box {
+    grid-column: 4 / 10; /* Spans from grid 4 to 9 */
+    display: flex;       /* Aligns image to text */
+    align-items: center; 
+    gap: 2rem;           /* Space between img and text */
+    margin-top: 2rem; /* Space between each box */
+    background-color: #F9F9F7; /* Optional: light background to define the box */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.news-box img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;   /* Prevents image distortion */
+    border-radius: 4px;
+}
+
+.news-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* MENU */
 .bev-headers {
     /* make span form second to last column (headers container!!!) */
@@ -221,6 +255,4 @@ footer {
 .contact-form .button {
     border: none;
 }
-.product-page-info h4 {
-    color: #403d40;
-}
+
