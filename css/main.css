@@ -403,3 +403,17 @@ input {
    grid-column: 2/12;
    margin-top: 7rem;
 }
+
+@media (width < 960px) {
+  nav a {
+    font-size: 1.35rem;
+  }
+  /* cart */
+  .cart-list {
+    grid-column: 2/12;
+  }
+  .cart-summary-sidebar {
+    grid-column: 2/12;
+    margin-top: 4rem;
+  }
+}
