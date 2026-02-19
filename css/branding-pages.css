@@ -134,6 +134,10 @@ footer {
 }
 
 /* PRODUCT SPECIFIC PAGE */
+.product-page {
+    margin-top: 6rem;
+}
+
 .product-page-img {
     grid-column: 2/6;
     width: 70%;
@@ -145,6 +149,17 @@ footer {
     grid-column: 6/12;
     max-width: 80%;
     justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-page-info p, .product-page-info a, .product-heading {
+    grid-column: 1/-1;
+}
+
+.product-page-info img {
+    grid-column: 2;
+    justify-self: end;
 }
 
 .product-page-info h4 {
