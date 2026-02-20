@@ -112,13 +112,34 @@ footer {
     align-items: center; 
     gap: 2rem;           /* Space between img and text */
     margin-top: 2rem; /* Space between each box */
-    background-color: #F9F9F7; /* Optional: light background to define the box */
-    padding: 1rem;
+    background-color: #F9F9F7;
+    padding: 1.5rem;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* https://www.w3schools.com/css/css3_2dtransforms.asp */
+}
+
+.news-box:hover {
+    transform: translateY(-5px); /* lifts box */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    background-color: #fdfdfb; /* Slight brighten */
+}
+
+.buy-now {
+    width: fit-content; /* so button only wraps the text */
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem; /* same as menu button */
+    transition: opacity 0.2s ease;
+}
+
+.buy-now:hover {
+    opacity: 0.9;
 }
 
 .news-box img {
-    width: 250px;
+    min-width: 250px;
     height: 200px;
     object-fit: cover;   /* Prevents image distortion */
     border-radius: 4px;
@@ -270,4 +291,3 @@ footer {
 .contact-form .button {
     border: none;
 }
-
