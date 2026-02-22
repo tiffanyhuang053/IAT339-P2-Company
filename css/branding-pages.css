@@ -9,16 +9,16 @@ h1, h2, h3, h4, h5, p {
 /* NAV BAR */
 nav {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   gap: 3rem;
   justify-content: end;
-  position: relative;
+  /* position: relative; */
 }
 
-header {
+/* header {
     width: 100%;
-}
+} */
 
 /* FOOTER */
 footer {
@@ -83,7 +83,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 6rem 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .brand-logo h1 {
@@ -103,6 +103,71 @@ footer {
     align-self: center;
 }
 
+/* HOME CAROUSEL */
+.home-carousel {
+    grid-column: 8 / 12;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+}
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.carousel-container {
+    position: relative;
+    width: 24rem; 
+    height: 30rem;
+}
+
+.carousel-slide {
+    position: absolute; /* stacks images directly on top of each other */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1; /* Pushes inactive images to the back */
+    transition: transform 0.4s ease, z-index 0s;
+}
+
+/* Give each image a tilt in the back */
+.carousel-slide:nth-child(1) { transform: rotate(-4deg); }
+.carousel-slide:nth-child(2) { transform: rotate(3deg); }
+.carousel-slide:nth-child(3) { transform: rotate(-2deg); }
+.carousel-slide:nth-child(4) { transform: rotate(2deg); }
+
+/* https://www.youtube.com/watch?v=Fbc3lfe3T7s */
+.carousel-slide.active {
+    z-index: 10; 
+    transform: rotate(0deg) scale(1.02); /* Makes the active image straight and slightly moves forward */
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-prev, .carousel-next {
+    background: transparent;
+    color: #405C2A; 
+    border: none;
+    cursor: pointer;
+    font-size: 3.5rem; 
+    font-weight: 300;
+    padding: 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    color: #A0B682; 
+    transform: scale(1.1); /* becomes larger on hover */
+}
+
+
 /* HOME PAGE - COMPANY NEWS*/
 .news-updates {
     margin-top: 8rem;
@@ -119,13 +184,34 @@ footer {
     align-items: center; 
     gap: 2rem;           /* Space between img and text */
     margin-top: 2rem; /* Space between each box */
-    background-color: #F9F9F7; /* Optional: light background to define the box */
-    padding: 1rem;
+    background-color: #F9F9F7;
+    padding: 1.5rem;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* https://www.w3schools.com/css/css3_2dtransforms.asp */
+}
+
+.news-box:hover {
+    transform: translateY(-5px); /* lifts box */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    background-color: #fdfdfb; /* Slight brighten */
+}
+
+.buy-now {
+    width: fit-content; /* so button only wraps the text */
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem; /* same as menu button */
+    transition: opacity 0.2s ease;
+}
+
+.buy-now:hover {
+    opacity: 0.9;
 }
 
 .news-box img {
-    width: 250px;
+    min-width: 250px;
     height: 200px;
     object-fit: cover;   /* Prevents image distortion */
     border-radius: 4px;
@@ -159,6 +245,7 @@ footer {
     grid-column: 7 / 12;
     display: flex;
     flex-direction: column;
+    /* gap: 4rem; */
 }
 
 .menu-product-row {
@@ -333,3 +420,4 @@ footer {
         gap: 4rem;
     }
 }
+
