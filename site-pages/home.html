@@ -41,7 +41,26 @@
                     <p>Our warm, calm space, mixed with thoughtfully crafted, high quality products, fosters a welcoming environment inviting customers to slow down and enjoy the moment.</p>
                 </section>
             </div>
-            <img src="../img/photo-carousel.png" alt="Carousel of matcha related images that represent The Matcha Lab" width="522" height="548" class="home-carousel">
+            <div class="home-carousel">
+                <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+                
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="../img/matcha-stir.png" alt="Handcrafted iced matcha latte">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="../img/matcha-lattes.jpg" alt="Our eco-friendly cups">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="../img/matcha-powder.png" alt="Seasonal strawberry matcha">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="../img/matcha-whisk.png" alt="Seasonal strawberry matcha">
+                    </div>
+                </div>
+
+                <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
         </div>
 
         <div class="grid-container news-updates">
@@ -96,5 +115,24 @@
 
             <p>© The Matcha Lab</p>
         </footer>
+
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-slide');
+
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                
+                if (index >= slides.length) currentSlide = 0;
+                if (index < 0) currentSlide = slides.length - 1;
+                
+                slides[currentSlide].classList.add('active');
+            }
+
+            function moveSlide(step) {
+                currentSlide += step;
+                showSlide(currentSlide);
+            }
+        </script>
     </body>
 </html>
