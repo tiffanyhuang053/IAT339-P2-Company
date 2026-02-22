@@ -9,16 +9,16 @@ h1, h2, h3, h4, h5, p {
 /* NAV BAR */
 nav {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
   gap: 3rem;
   justify-content: end;
-  /* position: relative; */
+  position: relative;
 }
 
-/* header {
+header {
     width: 100%;
-} */
+}
 
 /* FOOTER */
 footer {
@@ -83,7 +83,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 6rem 0;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .brand-logo h1 {
