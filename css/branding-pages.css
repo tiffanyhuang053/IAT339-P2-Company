@@ -96,6 +96,71 @@ footer {
     align-self: center;
 }
 
+/* HOME CAROUSEL */
+.home-carousel {
+    grid-column: 8 / 12;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+}
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.carousel-container {
+    position: relative;
+    width: 24rem; 
+    height: 30rem;
+}
+
+.carousel-slide {
+    position: absolute; /* stacks images directly on top of each other */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1; /* Pushes inactive images to the back */
+    transition: transform 0.4s ease, z-index 0s;
+}
+
+/* Give each image a tilt in the back */
+.carousel-slide:nth-child(1) { transform: rotate(-4deg); }
+.carousel-slide:nth-child(2) { transform: rotate(3deg); }
+.carousel-slide:nth-child(3) { transform: rotate(-2deg); }
+.carousel-slide:nth-child(4) { transform: rotate(2deg); }
+
+/* https://www.youtube.com/watch?v=Fbc3lfe3T7s */
+.carousel-slide.active {
+    z-index: 10; 
+    transform: rotate(0deg) scale(1.02); /* Makes the active image straight and slightly moves forward */
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-prev, .carousel-next {
+    background: transparent;
+    color: #405C2A; 
+    border: none;
+    cursor: pointer;
+    font-size: 3.5rem; 
+    font-weight: 300;
+    padding: 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    color: #A0B682; 
+    transform: scale(1.1); /* becomes larger on hover */
+}
+
+
 /* HOME PAGE - COMPANY NEWS*/
 .news-updates {
     margin-top: 8rem;
