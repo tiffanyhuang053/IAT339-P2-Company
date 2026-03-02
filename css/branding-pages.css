@@ -298,6 +298,18 @@ footer {
     color: #403d40;
 }
 
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.quantity-label {
+    margin: 0;
+    align-self: center;
+}
+
 /* CONTACT PAGE */
 .contact-header {
     grid-column: 1 / -1;
@@ -310,7 +322,7 @@ footer {
 
 .contact-card {
     grid-column: 4 / 10; /* Centers the card */
-    background-color: #FFFFFF;
+    background-color: #F9F9F7;
     padding: 3.5rem 4rem;
     border-radius: 1.25rem;
     display: flex;

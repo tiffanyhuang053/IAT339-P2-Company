@@ -317,7 +317,7 @@ input {
 /* Right Column (Sidebar) Styling */
 .cart-summary-sidebar {
     grid-column: 9 / 12;
-    background-color: #f9f9f7;
+    background-color: #F9F9F7;
     padding: 2rem;
     align-self: start;
     border-radius: 8px;
