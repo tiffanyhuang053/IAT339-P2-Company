@@ -44,6 +44,12 @@ footer {
   margin: 0;
 }
 
+.links {
+    gap: 6rem;
+    display: flex;
+    flex-direction: row;
+}
+
 /* CHECKOUT PAGE */
 .checkout-overview {
     grid-column: 8/12;
@@ -453,6 +459,27 @@ footer {
 
 @media (width < 640px) {
     /* home page */
+    .three-w {
+        grid-column: 2/12;
+    }
+    .home-carousel {
+        grid-column: 1/-1;
+        margin-top: 4rem;
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem; 
+    }
+    .carousel-container {
+        width: 70vw;
+        height: 87.5vw;    /* proportions (30/24 = 1.25 -> 70 * 1.25 = 87.5) */
+    }
+    .carousel-prev, .carousel-next {
+        font-size: 2rem; 
+    }
+    .news-box {
+        grid-column: 2/12;
+    }
+
     .news-box {
         flex-direction: column; /* Stacks image above text */
         align-items: flex-start; 
