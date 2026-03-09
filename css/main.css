@@ -417,6 +417,7 @@ input {
     margin-top: 4rem;
   }
 
+  /* checkout */
   .user-inputs {
     grid-column: 2/12;
   }
@@ -437,5 +438,10 @@ input {
 @media (width < 375px) {
   h1 {
     font-size: 3.5rem;
+  }
+
+  .cart-preview {
+    flex-direction: column;
+    gap: 0;
   }
 }
