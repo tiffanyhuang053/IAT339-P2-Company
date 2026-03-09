@@ -416,4 +416,26 @@ input {
     grid-column: 2/12;
     margin-top: 4rem;
   }
+
+  .user-inputs {
+    grid-column: 2/12;
+  }
+
+   .contact-info, .delivery-info, .payment-info {
+    max-width: 100%;
+   }
+
+   .contact-info input, .delivery-info input, .payment-info input, .card-spec input, .name-info input, .address-info input {
+    width: 100%;
+   }
+
+   .radio-options input {
+    width: auto;
+   }
+}
+
+@media (width < 375px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }

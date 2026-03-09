@@ -73,6 +73,11 @@ footer {
     gap: 0.5rem;
 }
 
+.checkout-item-left img {
+    max-width: 100%;
+    height: auto;
+}
+
  .checkout-item p, .checkout-final p {
     justify-self: end;
  }
@@ -267,8 +272,8 @@ footer {
 
 .desserts {
     grid-column: 2 / 12;
-    display: flex;
-    gap: 4rem;
+    /* display: flex;
+    gap: 4rem; */
 }
 
 /* PRODUCT SPECIFIC PAGE */
@@ -324,6 +329,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
+    margin-top: 6rem;
 }
 
 .contact-card {
@@ -414,6 +420,15 @@ footer {
         padding: 2rem 1.5rem; 
         grid-column: 3 / 11;
     }
+
+    /* menu */
+    .hot-drinks {
+        grid-column: 2/12;
+    }
+    .cold-drinks {
+        grid-column: 2/12;
+        margin-top: 4rem;
+    }
 }
 
 @media (width < 960px) {
@@ -436,15 +451,6 @@ footer {
         grid-column: 2/12;
     }
 
-    /* menu */
-    .hot-drinks {
-        grid-column: 2/12;
-    }
-    .cold-drinks {
-        grid-column: 2/12;
-        margin-top: 4rem;
-    }
-
     /* contact page */
     .contact-methods {
         gap: 2rem;
@@ -454,6 +460,12 @@ footer {
     .contact-card {
         padding: 2rem 1.5rem; 
         grid-column: 2 / 12;
+    }
+
+    /* checkout cart */
+    .name-info, .card-spec, .address-info {
+        grid-template-columns: 1fr; /* Changes to 1 column */
+        gap: 0.5rem;
     }
 }
 
@@ -512,13 +524,38 @@ footer {
         grid-column: 2 / 12;
     }
 
-    .name-info {
-        grid-template-columns: 1fr; /* Changes to 1 column */
-    }
-
     /* footer */
     .footer-top {
         flex-direction: column;
         gap: 4rem;
+    }
+
+    /* product page */
+    .product-page-img {
+        width: 13rem;
+        height: auto;
+    }
+
+    /* menu */
+    .menu-product-row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    /* checkout page */
+    .checkout-item, .checkout-final {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-final {
+        margin-top: 2rem;
+    }
+
+    .checkout-item-left {
+        flex-direction: column;
+    } 
+
+    .checkout-item p, .checkout-final p {
+        justify-self: start;
     }
 }
